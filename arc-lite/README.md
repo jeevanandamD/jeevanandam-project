@@ -1,16 +1,133 @@
-# React + Vite
+# 🚦 Smart Street Light Monitoring & Maintenance System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An IoT-based web application to monitor street lights, track energy usage, detect faults, and manage maintenance workers using ESP32 DevKit modules.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Overview
 
-## React Compiler
+This project helps cities, campuses, and smart communities efficiently manage street lights using real-time IoT data.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📡 ESP32 devices send live data
+- 📊 Admin monitors system through dashboard
+- 👷 Workers receive and complete assigned tasks
+- ⚡ Energy usage is tracked and analyzed
+- 🚨 Faults are detected automatically
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎯 Features
+
+### 👑 Admin Features
+- Secure login
+- Dashboard with real-time stats
+- Monitor all street lights
+- View energy usage analytics
+- Detect and manage faults
+- Assign workers to issues
+- Map-based monitoring
+- Maintenance history tracking
+
+### 👷 Worker Features
+- Secure login
+- View assigned tasks
+- See fault details & location
+- Update task status
+- Add repair notes
+- View task history
+
+### 🌐 IoT Features
+- ESP32 integration
+- Live sensor data
+- Fault detection
+- Energy monitoring
+- Offline device detection
+
+---
+
+## ⚙️ Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- Tailwind CSS
+- React Router
+- Axios
+- Chart.js / Recharts
+- Leaflet Maps
+
+### Backend
+- Node.js
+- Express.js
+
+### Database
+- PostgreSQL / MongoDB
+
+### IoT Hardware
+- ESP32 DevKit
+- Voltage & Current Sensors
+- LDR Sensor
+- Relay Module
+
+### Authentication
+- JWT
+- bcrypt
+
+---
+
+## 🧠 System Architecture
+ESP32 + Sensors
+↓
+Internet (Wi-Fi)
+↓
+Backend Server
+↓
+Database + Fault Logic
+↓
+React Frontend
+↓ ↓
+Admin Worker
+
+
+---
+
+## 🔐 User Roles
+
+### Admin
+- Full access
+- Monitor lights
+- Assign workers
+- View analytics
+
+### Worker
+- View assigned tasks
+- Update repair status
+
+---
+
+## 📂 Project Structure
+project/
+│
+├── frontend/
+│ ├── src/
+│ │ ├── components/
+│ │ ├── pages/
+│ │ ├── layouts/
+│ │ ├── services/
+│ │ ├── context/
+│ │ ├── data/
+│ │ └── App.jsx
+│
+├── backend/
+│ ├── controllers/
+│ ├── routes/
+│ ├── models/
+│ ├── middleware/
+│ └── server.js
+│
+├── esp32/
+│ └── code.ino
+│
+└── README.md
+
+------------****------------
