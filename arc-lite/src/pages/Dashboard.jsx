@@ -1,9 +1,13 @@
 import React from 'react';
 import '../styles/Dashboard.css';
+import Antigravity from '../components/AntigravityInner.jsx';
 
 function Dashboard() {
   return (
     <div className="dashboard-container">
+      <div className="dashboard-antigravity">
+        <Antigravity count={180} particleSize={0.65} waveAmplitude={0.8} ringRadius={8} />
+      </div>
       <div className="dashboard-overlay">
         <div className="dashboard-header">
           <h1 className="dashboard-title">ARC-LITE</h1>

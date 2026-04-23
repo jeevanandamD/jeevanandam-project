@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../styles/Login.css';
 
 export default function Login() {
+  const navigate = useNavigate();
   const [credentials, setCredentials] = useState({
     username: '',
     password: '',
@@ -34,6 +35,12 @@ export default function Login() {
     if (!username || !password || !role) {
       setMessage('Please fill all fields and select a role.');
       return;
+    }
+
+    if (credentials.role === 'Admin') {
+      navigate('/admin/dashboard');
+    } else {
+      navigate('/dashboard');
     }
 
     console.log('Login Data:', credentials);
@@ -101,7 +108,7 @@ export default function Login() {
             <button type="submit">Login</button>
 
             <p className="login-register-text">
-              New Worker? <Link to="/register">Register here</Link>
+              New Worker? <Link to="/worker-register">Register here</Link>
             </p>
 
             {message && <p className="login-message">{message}</p>}
