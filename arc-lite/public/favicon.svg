@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">ARC-LITE Street Light Logo</title>
+  <desc id="desc">A black street light with a warm yellow glow.</desc>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="45%" r="45%">
+      <stop offset="0%" stop-color="#fff4c7" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#ffe79b" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#ffe79b" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <circle cx="128" cy="118" r="92" fill="url(#glow)" />
+
+  <rect x="122" y="112" width="12" height="110" rx="5" fill="#050505" />
+  <rect x="117" y="213" width="22" height="8" rx="4" fill="#050505" />
+  <rect x="113" y="220" width="30" height="12" rx="6" fill="#050505" />
+
+  <path d="M96 76 110 56h36l14 20-7 7h-50z" fill="#050505" />
+  <path d="m106 80 8 34h28l8-34z" fill="#efe5bf" stroke="#050505" stroke-width="4" />
+  <path d="M104 80h48l14 14-10 3-10 20h-36L100 97l-10-3z" fill="none" stroke="#050505" stroke-width="6" stroke-linejoin="round" />
+  <circle cx="128" cy="49" r="8" fill="#050505" />
+</svg>

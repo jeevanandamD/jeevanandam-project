@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Mogra&family=Roboto+Slab:wght@100..900&display=swap');
+
+.mogra-regular {
+  font-family: "Mogra", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mogra", system-ui;
+}
+
+.dashboard-container {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard-overlay {
+  width: 100%;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.dashboard-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #38bdf8;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.dashboard-subtitle {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.main-card {
+  text-align: left;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(56, 189, 248, 0.25);
+}
+
+.info-card h2,
+.info-card h3 {
+  color: #38bdf8;
+  margin-bottom: 12px;
+}
+
+.info-card p {
+  color: #e2e8f0;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-title {
+    font-size: 2.2rem;
+  }
+
+  .dashboard-overlay {
+    padding: 25px;
+  }
+
+  .info-card {
+    padding: 20px;
+  }
+}

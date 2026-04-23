@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.worker-reg-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.worker-reg-container {
+  width: 100%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.worker-reg-left {
+  padding: 50px;
+  color: white;
+  background: rgba(56, 189, 248, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.worker-reg-left h1 {
+  font-size: 3rem;
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+.worker-reg-left p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #e2e8f0;
+}
+
+.worker-reg-right {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.worker-reg-form {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.worker-reg-form h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.worker-reg-form input[type='text'],
+.worker-reg-form input[type='email'],
+.worker-reg-form input[type='password'],
+.worker-reg-form input[type='tel'],
+.worker-reg-form input[type='date'] {
+  padding: 14px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.worker-reg-form input::placeholder {
+  color: #cbd5e1;
+}
+
+.worker-reg-form input[type='date'] {
+  color: #cbd5e1;
+}
+
+.role-box {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.role-box p {
+  font-weight: 600;
+  color: #38bdf8;
+}
+
+.role-box label,
+.active-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #e2e8f0;
+}
+
+.worker-reg-form button {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #38bdf8;
+  color: #0f172a;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.worker-reg-form button:hover {
+  background: #0ea5e9;
+  transform: translateY(-2px);
+}
+
+.worker-message {
+  text-align: center;
+  color: #f8fafc;
+  font-size: 0.95rem;
+  margin-top: 5px;
+}
+
+@media (max-width: 900px) {
+  .worker-reg-container {
+    grid-template-columns: 1fr;
+  }
+
+  .worker-reg-left,
+  .worker-reg-right {
+    padding: 30px;
+  }
+
+  .worker-reg-page {
+    padding: 20px;
+  }
+}

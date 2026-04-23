@@ -1,0 +1,13 @@
+/* Layout */
+.app-layout {
+  display: flex;
+}
+
+/* Side Navigation */
+.main-content {
+  margin-left: 240px;
+  width: calc(100% - 240px);
+  min-height: 100vh;
+  padding: 20px;
+  background: #0f172a; 
+}
